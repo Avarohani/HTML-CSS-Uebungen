@@ -26,11 +26,35 @@ body {
   display: block;
 }
 
-.card h1 {
+.card h2 {
   background: #fff;
   padding: 5px;
 }
 
 .row {
   display: block;
+}
+/*ab einer Bildschrimbreite  von 1140 wird der body  Rot*/
+/*Die Karten sollen ab Weite 1140px nebeneinander stehen*/
+/*A3,ab zwischen einer Bildschirmbreite von 758 und 1139px soll der Body Gelb sein,alles kleiner als 768px bleibt weiß.*/
+/*A4,Die Überschrift H1 soll auf dem Ipad 2rem(32px)groß sein und auf dem großen Bildschrim 2.5rem
+(40).*/
+
+@media (min-width:768px) and (max-width:1139px) {
+  body {
+    background-color: yellow;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  body {
+    background-color: tomato;
+  }
+
+  .row {
+    display: flex;
+  }
 }
