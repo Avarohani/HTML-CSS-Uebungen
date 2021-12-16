@@ -32,7 +32,7 @@ section {
   display: flex;
   justify-content:center; /*Platz auf der X-Achse Horizontal*/
 align-items:stretch; /*Platz auf der Y-Achse Horizontal*/
-flex-direction:column;
+flex-direction:row;
 
 
 }
